@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="js-button">Enter your value</button>
+    <input value="Welcome to" id="js-input" type="text">
+    <script>
+    var button = document.getElementById('js-button');
+    var input = document.getElementById('js-input');
+
+    button.addEventListener('click',()=>{
+        var inputValue = input.value;
+        alert(`${inputValue} JavaScript`)
+    })
+    </script>
+</body>
+</html>
