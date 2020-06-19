@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //bai17
+    function minAndMax(str1,str2,str3){
+        var max;
+        if(str1>str2 && str1>str3){
+            max=str1;
+            return max;
+        }else if(str2>str3 && str2>str1){
+            max=str2;
+            return max;
+        }else if(str3>str1 && str3>str2){
+            max=str3;
+            return max;
+        }
+    }
+    console.log(minAndMax(9,7,5));
+    </script>
+</body>
+</html>

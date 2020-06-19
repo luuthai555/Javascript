@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <ul id="change-color">
+       <li  id="js-red">Red</li>
+       <li  id="js-blue">Blue</li>
+       <li  id="js-brown">Brown</li>
+       <li  id="js-lavender">Lavender</li>
+    </ul>
+    <script>
+    var redColor = document.getElementById('js-red');
+    var blueColor  = document.getElementById('js-blue');
+    var brownColor  = document.getElementById('js-brown');
+    var lavenderColor  = document.getElementById('js-lavender');
+
+
+    redColor.onclick = ()=>{
+        document.body.style.background = 'red';
+    }
+    blueColor.onclick = ()=>{
+        document.body.style.background = 'blue';
+    }
+    brownColor.onclick = ()=>{
+        document.body.style.background = 'brown';
+    }
+    lavenderColor.onclick = ()=>{
+        document.body.style.background = 'lavender';
+    }
+    </script>
+</body>
+</html>

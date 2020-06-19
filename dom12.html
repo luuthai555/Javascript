@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="js-quanlity" type="number" placeholder="Enter your quanlity">
+    <input id="js-price" type="number" placeholder="Enter your price">
+    <input id="js-total" type="text" disabled='true'>
+    <script>
+    var quanlity = document.getElementById('js-quanlity');
+    var price = document.getElementById('js-price');
+    var total = document.getElementById('js-total');
+
+    function calculate(){
+        let quanlityValue = Number(quanlity.value);
+        let priceValue = Number(price.value);
+        let result = 0;
+        total.value = result;
+        total.value = quanlityValue * priceValue;
+        return result;
+    }
+        
+    quanlity.oninput = calculate;
+    price.oninput = calculate;
+    </script>
+</body>
+</html>

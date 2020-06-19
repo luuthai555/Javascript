@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 24 Cho một mảng là một tập các số nguyên dương, lọc ra một bảng b gồm tất cả các số là số nguyên t
+var  a = [1,2,5,2,3,4,6,7,11,9,6];
+function prime(primeNum){
+    if (primeNum < 2)
+    return false;
+for (var i = 2; i <= Math.sqrt(primeNum); i++)
+{
+    if (primeNum % i == 0)
+    {
+        return false;
+    }
+}
+return true;
+}
+var checkPrime = a.filter(prime);
+console.log(checkPrime);
+
+    </script>
+</body>
+</html>

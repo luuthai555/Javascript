@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // bai18 Viết hàm tìm vị trí xâu X tồn tại kề cuối trong xâu Y
+function findPosition(str1,str2){
+    var str1Split = str1.split(" "); 
+    var lastIndex=str1Split.lastIndexOf(str2);
+    str1Split.splice(lastIndex);
+    var find = str1Split.lastIndexOf(str2);
+    return find;
+}
+console.log(findPosition("That is a beatiful day and I saw a beatiful girl","beatiful"));
+    </script>
+</body>
+</html>

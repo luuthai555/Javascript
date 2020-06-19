@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // bai0 Viết chương trình kiểm tra n có phải là số nguyên tố hay không?
+    var answear=prompt('Enter your number:');
+    var primeNum=Number(answear)
+    var count=true;
+        if(primeNum==2){
+            count=true;
+        } 
+        else if(primeNum<2 || primeNum%2==0){
+            count=false;
+        }
+        else{
+            for(var i=3;i<primeNum-1;i+=2){
+                if(primeNum%i==0){
+                    count=false;
+                    break;
+                }
+                
+            }
+        }
+        if(count==true){
+            document.write('This is a prime number')
+        }
+        else{
+            document.write('This is not a prime number')
+
+        }
+    </script>
+</body>
+</html>

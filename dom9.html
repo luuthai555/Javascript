@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="time" ></span>
+    <script>
+    var time = document.getElementById('time');
+    setInterval(() => {
+        var hour = new Date().getHours();
+        var min = new Date().getMinutes();
+        var second = new Date().getSeconds();
+        time.innerHTML = `${hour} giờ ${min} phút ${second} giây`
+    }, 1000);
+    </script>
+</body>
+</html>

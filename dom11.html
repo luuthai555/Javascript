@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="toDo">
+    </ul>
+    <input id="addInput" type="text" placeholder="Enter your value">
+    <button id="addButton">Add</button>
+
+    <script>
+    var toDo = document.getElementById('toDo');
+    var addInput = document.getElementById('addInput');
+    var addButton = document.getElementById('addButton');
+
+    addButton.addEventListener('click',()=>{
+    let newTask = addInput.value;
+    let item = document.createElement('li');
+    let button = document.createElement('button');
+    item.innerText = button;
+    button.innerText ='-';
+    button.addEventListener('click',()=>{
+        toDo.removeChild(item)
+    })
+    item.innerText = newTask;
+    toDo.append(item)
+    item.append(button)
+
+})
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //bai 19 Hãy tính tổng các số từ 1 đến n mà không dùng for, while loop
+    function sum(num){
+        if(num<1){
+            return 0;
+        }else{
+            return sum(num-1)+num;
+        }
+    }
+    console.log(sum(9));
+    </script>
+</body>
+</html>
